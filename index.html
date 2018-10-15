@@ -1,0 +1,99 @@
+ <html> 
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+	<title> Watermelons </title> 
+<style> 
+p{ 
+color:lime;
+font-size:50px;
+}	
+</style>
+<script>
+function Watermelon(){
+var text = confirm("Do you really want to play?");
+return text;
+}
+function answer(){
+	var radio= document.getElementsByName("EDIT");
+	var selection=false;
+	var message = "";
+	for( var i = 0; i < radio.length; i++) { 
+if(radio[i].value == "yes" && radio[i].checked == true)
+{	
+selection = true; 
+	}
+}
+if(selection == true)
+
+ {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+}
+</script>
+</head> 
+<body id="background"> 
+	<header> <h1> <center> Watermelons: The fruit that is similar to life. It's sweet, but you have to spit out the seeds.</h1> </center> </header>
+	<nav> 
+	<ul id="navmenu">
+<li class="navitem"> <a href="index.html"> Home </a> </li>
+<li class="navitem"> <a href="abouttheauthor.html"> About the Author</a> </li>
+<li class="navitem">  <a href="videos.html"> Videos </a> </li>
+</ul>
+</nav>
+<div id="rightside">
+	<p> Do you like watermelons?</p>
+</div>
+<div id="leftside">
+<p> They are one of my favorite fruits! </p>
+</div>
+	<center>
+<h1>Watermelons</h1>
+<h3>By: Megan Smith</h3>
+<p class="paragraph"><b>There are many different <i>varieties</i> of watermelons. The basic watermelon has a green and yellow <u>rind</u> with a reddish pink inside and black seeds.</b> </p>
+<p class="paragraph"><b> <span class="wrap-text"> Here are some examples of different types of watermelons. </span> </b> </p>
+<ol>
+	<li class="lisitem">Yellow</li>
+	<li class="lisitem">Seedless</li>
+	<li class="lisitem">Square</li>
+	<li class="lisitem">Golden</li>
+	<li class="lisitem">Green</li>
+</ol>
+</p>
+<h2>Watermelon Trivia!</h2>
+<div class="wrap-trivia"> 
+</p>Which is not a type of watermelon?</p>
+</div>
+<form>
+	<div id="response"></div>
+	<div class="wrap-list">
+	<input type="radio" name="EDIT" value="no"> Golden <br>
+	<input type="radio" name="EDIT" value="no"> Green <br>
+	<input type="radio" name="EDIT" value="yes"> Pink <br>
+	<input type="radio" name="EDIT" value="no"> Seedless <br> 
+	<input onclick="answer()" type="button" value="Submit" id="button">
+</div>
+</form>
+<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+</audio> 
+<img src="https://i.pinimg.com/originals/df/5b/57/df5b57abc9496d94f036e31eba39de22.jpg"/>
+
+<img src="https://i.kinja-img.com/gawker-media/image/upload/s--2w_XIZ3c--/c_scale,f_auto,fl_progressive,q_80,w_800/18wh0bir2q4nxjpg.jpg"/>
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qDztofyKkt4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<center> Megan Smith </center>
+<center> A Fun Game! (It doesn't have to do with watermelons, but it's cool anyway.) <a onclick="return Watermelon()" href="http://surviv.io/"> Click to play.</a> </center>
+
+<footer> <center> <h2>This website was created by Megan Smith. </h2></center>
+<center><h1>Thanks for reading!</h1></center>  </footer>
+</body> 
+</html>
+
+
+
+
+
+
